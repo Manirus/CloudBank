@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="65.235">
+    <testcase classname="Create Loan for a client" name="Creating a loan for a client" time="64.722">
+        <system-out><![CDATA[Given user logged in to the website.........................................passed
+When user navigate to the Clients menu and select "Client"..................passed
+And user open the create client and fills the details "PERSON" , "Manikandan","6111111807","number:51","Merchant","selvam","Father","Current","amd".passed
+And user activates the client...............................................passed
+And user creates new client and fills the form "Personal loan" , "<Loan_Account_Type>" ,"Cash/Cheque".passed
+And user fill in mandatory values on the "Terms" page:......................passed
+And user navigate through lenders "saa" and charges page....................passed
+And user review the loan summary "Submitted and pending approval"...........passed
+Then the loan should be created successfully  "Approved"....................passed
+]]></system-out>
+    </testcase>
+</testsuite>

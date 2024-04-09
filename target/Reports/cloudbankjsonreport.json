@@ -1,0 +1,304 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-04-02T09:47:51.815Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6944153500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.intialization()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Creating a loan for a client",
+        "description": "",
+        "id": "create-loan-for-a-client;creating-a-loan-for-a-client;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 716900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.exit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 685168300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user logged in to the website",
+            "match": {
+              "location": "org.stepdefinition.StepDefinition.Tc01()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2950564400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigate to the Clients menu and select \"Client\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Client\"",
+                  "offset": 45
+                }
+              ],
+              "location": "org.stepdefinition.StepDefinition.Tc03(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23786331800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user open the create client and fills the details \"PERSON\" , \"Manikandan\",\"6111111807\",\"number:51\",\"Merchant\",\"selvam\",\"Father\",\"Current\",\"amd\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PERSON\"",
+                  "offset": 50
+                },
+                {
+                  "val": "\"Manikandan\"",
+                  "offset": 61
+                },
+                {
+                  "val": "\"6111111807\"",
+                  "offset": 74
+                },
+                {
+                  "val": "\"number:51\"",
+                  "offset": 87
+                },
+                {
+                  "val": "\"Merchant\"",
+                  "offset": 99
+                },
+                {
+                  "val": "\"selvam\"",
+                  "offset": 110
+                },
+                {
+                  "val": "\"Father\"",
+                  "offset": 119
+                },
+                {
+                  "val": "\"Current\"",
+                  "offset": 128
+                },
+                {
+                  "val": "\"amd\"",
+                  "offset": 138
+                }
+              ],
+              "location": "org.stepdefinition.StepDefinition.Tc04(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5152192300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user activates the client",
+            "match": {
+              "location": "org.stepdefinition.StepDefinition.Tc05()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11042089700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user creates new client and fills the form \"Personal loan\" , \"\u003cLoan_Account_Type\u003e\" ,\"Cash/Cheque\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Personal loan\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"\u003cLoan_Account_Type\u003e\"",
+                  "offset": 61
+                },
+                {
+                  "val": "\"Cash/Cheque\"",
+                  "offset": 84
+                }
+              ],
+              "location": "org.stepdefinition.StepDefinition.Tc06(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3444786900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user fill in mandatory values on the \"Terms\" page:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Terms\"",
+                  "offset": 37
+                }
+              ],
+              "location": "org.stepdefinition.StepDefinition.Tc07(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Principal",
+                  "15000"
+                ]
+              },
+              {
+                "cells": [
+                  "Loan Term",
+                  "42"
+                ]
+              },
+              {
+                "cells": [
+                  "Number of repayments",
+                  "21"
+                ]
+              },
+              {
+                "cells": [
+                  "Repaid every Month",
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "Repaid every day 1",
+                  "first"
+                ]
+              },
+              {
+                "cells": [
+                  "Repaid every day 2",
+                  "SUNDAY"
+                ]
+              },
+              {
+                "cells": [
+                  "Nominal interest rate",
+                  "8"
+                ]
+              },
+              {
+                "cells": [
+                  "Amortization",
+                  "Equal installments"
+                ]
+              },
+              {
+                "cells": [
+                  "Interest calculation period",
+                  "Same as repayment period"
+                ]
+              },
+              {
+                "cells": [
+                  "Broken Period Interest",
+                  "BPI collected in addition to first installment"
+                ]
+              },
+              {
+                "cells": [
+                  "Repayment strategy",
+                  "Early Repayment Strategy"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 340088100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user navigate through lenders \"saa\" and charges page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"saa\"",
+                  "offset": 30
+                }
+              ],
+              "location": "org.stepdefinition.StepDefinition.Tc08(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6037811200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user review the loan summary \"Submitted and pending approval\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Submitted and pending approval\"",
+                  "offset": 29
+                }
+              ],
+              "location": "org.stepdefinition.StepDefinition.Tc10(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4162870800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the loan should be created successfully  \"Approved\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Approved\"",
+                  "offset": 41
+                }
+              ],
+              "location": "org.stepdefinition.StepDefinition.Tc11(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create Loan for a client",
+    "description": "",
+    "id": "create-loan-for-a-client",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/step.feature",
+    "tags": []
+  }
+]
